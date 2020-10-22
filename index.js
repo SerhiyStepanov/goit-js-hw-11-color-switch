@@ -22,14 +22,15 @@ return Math.floor(Math.random() * (max - min + 1) + min);
 
 function onBtnStartClick() { 
   console.log('click on start')
-  setInterval(getItem,1000)
+intervalId = setInterval(getItem,1000)
 };
 
 function getItem() {
-  console.log()
+  console.log('hello')
 };
 
 
 function onBtnStopClick() {
   console.log('click on stop')
+  clearInterval(intervalId)
 };
