@@ -6,26 +6,30 @@ const colors = [
   '#009688',
   '#795548',
 ];
-console.log(colors)
 
-const startBtn = document.querySelector('button[data-action="start"]') 
-// console.log(startBtn)
-const stopBtn = document.querySelector('button[data-action="stop"]')
-// console.log(stopBtn)
 
-startBtn.addEventListener('click', onBtnStartClick)
-stopBtn.addEventListener('click', onBtnStopClick)
+const startBtn = document.querySelector('button[data-action="start"]');
+const stopBtn = document.querySelector('button[data-action="stop"]');
+
+startBtn.addEventListener('click', onBtnStartClick);
+stopBtn.addEventListener('click', onBtnStopClick);
+
+const randomIntegerFromInterval = (min, max) => {
+  min = 0;
+  max = colors.length;
+return Math.floor(Math.random() * (max - min + 1) + min);
+};
 
 function onBtnStartClick() { 
   console.log('click on start')
-}
+  setInterval(getItem,1000)
+};
+
+function getItem() {
+  console.log()
+};
+
 
 function onBtnStopClick() {
   console.log('click on stop')
-}
-
-
- 
-// const randomIntegerFromInterval = (min, max) => {
-// return Math.floor(Math.random() * (max - min + 1) + min);
-// };
+};
