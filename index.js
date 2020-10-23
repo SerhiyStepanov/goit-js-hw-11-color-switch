@@ -41,7 +41,7 @@ function getItem() {
 }
 
 function getColor() {
-  // console.log("color")
+// console.log("color")
 }
 
 function addBackgroundColor(color) {
