@@ -20,19 +20,32 @@ const randomIntegerFromInterval = (min, max) => {
 return Math.floor(Math.random() * (max - min + 1) + min);
 }
 
-function onBtnStartClick() { 
+let index = randomIntegerFromInterval()
+
+function onBtnStartClick(event) { 
   console.log('click on start')
-  intervalId = setInterval(getItem,1000)
+  intervalId = setInterval(getItem, 1000)
+  event.target.disabled = true
 }
 
-function onBtnStopClick() {
+function onBtnStopClick(event) {
   console.log('click on stop')
   clearInterval(intervalId)
+  startBtn.disabled = false
 }
 
-function getItem() {
+function getItem() { 
   console.log(randomIntegerFromInterval())
+  console.log(getColor())
+  console.log(addBackgroundColor())
 }
 
+function getColor() {
+  // console.log("color")
+}
+
+function addBackgroundColor(color) {
+  document.body.style.backgroundColor = 'tomato'
+}
 
 
