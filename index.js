@@ -18,21 +18,21 @@ const randomIntegerFromInterval = (min, max) => {
   min = 0;
   max = colors.length;
 return Math.floor(Math.random() * (max - min + 1) + min);
-};
+}
 
 function onBtnStartClick() { 
   console.log('click on start')
   intervalId = setInterval(getItem,1000)
-};
+}
 
 function onBtnStopClick() {
   console.log('click on stop')
   clearInterval(intervalId)
-};
+}
 
 function getItem() {
   console.log(randomIntegerFromInterval())
-};
+}
 
 
 
