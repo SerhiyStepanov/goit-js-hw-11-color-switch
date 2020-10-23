@@ -18,8 +18,6 @@ const randomIntegerFromInterval = (min, max) => {
 return Math.floor(Math.random() * (max - min + 1) + min);
 }
 
-// let index = randomIntegerFromInterval()
-
 function onBtnStartClick(event) { 
   // console.log('click on start')
   intervalId = setInterval(addBackgroundColor, 1000)
