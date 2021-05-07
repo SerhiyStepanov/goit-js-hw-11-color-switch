@@ -50,13 +50,13 @@ function addBackgroundColor() {
   const randomIndex = randomIntegerFromInterval(0, colors.length - 1);
   document.body.style.backgroundColor = colors[randomIndex];
   startBtn.style.color = colors[randomIndex];
-  startBtn.style.backgroundColor = "black";
+  startBtn.style.backgroundColor = "#808080";
   startBtn.style.border = "none";
   startBtn.style.padding = "10px 20px";
   startBtn.style.cursor = "pointer";
 
   stopBtn.style.color = colors[randomIndex];
-  stopBtn.style.backgroundColor = "black";
+  stopBtn.style.backgroundColor = "#808080";
   stopBtn.style.border = "none";
   stopBtn.style.padding = "10px 20px";
   stopBtn.style.cursor = "pointer";
